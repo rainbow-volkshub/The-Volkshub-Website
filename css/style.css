@@ -1,0 +1,128 @@
+/* Reset some basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background: #111;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: #111;
+  border-bottom: 1px solid #ff8800;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff8800;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+}
+.main-nav li + li {
+  margin-left: 1.5rem;
+}
+.main-nav a {
+  color: #fff;
+  transition: color 0.2s;
+}
+.main-nav a:hover {
+  color: #ff8800;
+}
+
+/* Hero */
+.hero {
+  background: #222;
+  padding: 4rem 0;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  color: #ff8800;
+}
+.hero p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #ff8800;
+  color: #111;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: #ff6600;
+}
+
+/* Sections */
+section {
+  padding: 3rem 0;
+}
+
+.about, .team-preview, .projects-list {
+  background: #111;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+.team-card {
+  padding: 1.5rem;
+  border: 1px solid #ff8800;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+}
+
+/* Projects */
+.project-card {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ff8800;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+}
+
+/* Footer */
+.site-footer {
+  background: #111;
+  border-top: 1px solid #ff8800;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ff8800;
+}
