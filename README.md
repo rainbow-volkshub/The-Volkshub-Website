@@ -83,4 +83,13 @@ Contact the Volkshub organization for permission to reuse or modify.
 
 ---
 
+## 📌 Clickable card helper
+
+The site includes a small helper script `js/card-links.js` that makes elements with class names containing `-card` clickable when they either contain an anchor (`<a href="...">`) or have a `data-href` attribute. This allows you to keep semantic markup while making the whole card area act like a link.
+
+Usage:
+- Wrap the card in an anchor (recommended) or add `data-href` and optionally `data-target="_blank"` to a `<div class="project-card" data-href="https://example.com" data-target="_blank">`.
+- The script is included on all pages and runs automatically.
+
+
 > © 2025 Volkshub. All rights reserved.
